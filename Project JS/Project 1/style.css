@@ -1,0 +1,21 @@
+body
+{
+    height: 100%;
+    margin: 0;
+}
+
+/* параметры для поля  */
+
+body
+{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+canvas
+{
+    border: 1px solid white;
+}
