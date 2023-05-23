@@ -89,11 +89,11 @@
 
     function crashBall() 
       {                                                 
-            for (i = 0; i < brickColumn; i++)
+            for (let n = 0; n < brickColumn; n++)
             {
-                for (j = 0; j < brickRow; j++)
+                for (let m = 0; m < brickRow; m++)
                 {
-                   let b = bricks[i][j];
+                   let b = bricks[n][m];
                    if (b.status == 1)
                    {
                    if (ballX > b.x && ballX < b.x + brickWidth && ballY > b.y && ballY < b.y + brickHeight)
@@ -143,17 +143,17 @@
         }
         function gameBricks()                       
         {
-            for (i = 0; i < brickColumn; i++)
+            for (let k = 0; k < brickColumn; k++)
             {
-                for (j = 0; j < brickRow; j++)
+                for (let l = 0; l < brickRow; l++)
                 {
-                    if (bricks[i][j].status == 1)
+                    if (bricks[k][l].status == 1)
                      {
-                       let brickX = (i * (brickWidth + brickPadding) + brickGap);
-                       let brickY = (j * (brickHeight + brickPadding) +brickGap);
+                       let brickX = (k * (brickWidth + brickPadding) + brickGap);
+                       let brickY = (l * (brickHeight + brickPadding) +brickGap);
 
-                       bricks[i][j].x = brickX;
-                       bricks[i][j].y = brickY;
+                       bricks[k][l].x = brickX;
+                       bricks[k][l].y = brickY;
 
                        context.beginPath();
                        context.rect(brickX, brickY, brickWidth, brickHeight);
