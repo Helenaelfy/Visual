@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./img/bubbles-230014_1280.jpg");
+    background-color: antiquewhite;
+}
+canvas{
+    background: black; 
+    display: block; 
+    margin: 20px auto;
+}
